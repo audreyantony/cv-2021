@@ -12,5 +12,5 @@ class ProjectsManager {
     public function __construct(myPDO $connect) {
         $this->connect = $connect;
     }
-    
+
 }

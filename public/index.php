@@ -8,6 +8,8 @@ require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'bin' . DIRECTORY_SEPARATO
 require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'myPDO.php';
 require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'projects' . DIRECTORY_SEPARATOR . 'Projects.php';
 require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'user' . DIRECTORY_SEPARATOR . 'User.php';
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'projects' . DIRECTORY_SEPARATOR . 'ProjectsManager.php';
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'user' . DIRECTORY_SEPARATOR . 'UserManager.php';
 
 // DB CONNECTION
 try{
@@ -15,6 +17,10 @@ try{
 }catch(PDOException $e){
     die($e->getMessage());
 }
+
+// MANAGERS
+// $projectsManager = new ProjectsManager($connection);
+// $userManager = new UserManager($connection);
 
 // ADMIN CONTROLLER IF SOMEONE IS CONNECTED AND IF THIS PERSON HAS A PERMISSION
 if(isset($_SESSION['session_id'])&&$_SESSION['session_id']==session_id()){
