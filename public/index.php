@@ -6,7 +6,8 @@ session_start();
 /* DEPENDENCIES */
 require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'bin' . DIRECTORY_SEPARATOR . 'config.php';
 require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'myPDO.php';
-
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'projects' . DIRECTORY_SEPARATOR . 'Projects.php';
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'user' . DIRECTORY_SEPARATOR . 'User.php';
 
 // DB CONNECTION
 try{
