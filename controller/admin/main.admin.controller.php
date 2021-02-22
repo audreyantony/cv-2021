@@ -5,7 +5,7 @@
 if (isset($_GET['admin'])) {
 
     // HEADER
-    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'header.parts.vue.php';
+    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'header.parts.view.php';
 
     switch ($_GET['admin']) {
         // HOME ADMIN PAGE
@@ -30,6 +30,6 @@ if (isset($_GET['admin'])) {
     }
 
     // FOOTER
-    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'footer.parts.vue.php';
+    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'footer.parts.view.php';
 
 }

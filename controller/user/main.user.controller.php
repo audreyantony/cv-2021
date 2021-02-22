@@ -4,7 +4,7 @@
 if (isset($_GET['page'])) {
 
     // HEADER
-    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'header.parts.vue.php';
+    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'header.parts.view.php';
 
     switch ($_GET['page']) {
         // HOME PAGE
@@ -33,7 +33,7 @@ if (isset($_GET['page'])) {
     }
 
     // FOOTER
-    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'footer.parts.vue.php';
+    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'footer.parts.view.php';
 
 // FIRST DISPLAY OF THE USER PAGE
 }
@@ -42,11 +42,11 @@ if (isset($_GET['page'])) {
 if (!isset($_GET['page']) && !isset($_GET['admin'])){
 
     // DISPLAY OF THE HOME PAGE
-    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'header.parts.vue.php';
+    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'header.parts.view.php';
 
     include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'controller' . DIRECTORY_SEPARATOR . 'user' . DIRECTORY_SEPARATOR . 'home.user.controller.php';
 
-    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'footer.parts.vue.php';
+    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'footer.parts.view.php';
 
 
 }
