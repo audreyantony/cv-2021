@@ -88,7 +88,7 @@ class Projects {
     public function setdescProjects(string $descProjects): void {
         $text = strip_tags(trim($descProjects),"<br>,<p>,<div>,<a>");
         if(empty($text)){
-            print("The project description can't be empty");
+            trigger_error("The project description can't be empty",E_USER_NOTICE);
         }else {
             $this->descProjects = $text;
         }
@@ -109,7 +109,7 @@ class Projects {
     public function seturlProjects(string $urlProjects): void {
         $url = strip_tags(trim($urlProjects),"<br>,<p>,<div>,<a>");
         if(empty($url)){
-            print("The project url can't be empty");
+            trigger_error("The project url can't be empty",E_USER_NOTICE);
         }else {
             $this->urlProjects = $url;
         }
