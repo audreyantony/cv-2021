@@ -3,7 +3,6 @@
         <!-- TITLE -->
         <h1>{ Hello World }</h1>
         <!-- SMALL ABOUT -->
-        <p><img src="img/picture/cerf.png" alt="small fawn" title="Picture of a fawn">Je m'appelle Audrey et pendant plus d'un an je vais continuer à apprendre ce qu'il faut savoir pour devenir Web Developer ! Ce portfolio est un devoir pratique pour mon école, mais je le garderai par la suite. Tu peux y trouver des images de ce que je fais pour l'école et pendant mon temps libre, comme de la peinture et de la photo sur la page "galerie". Dans la partie "tutoriel" vous pourrez j'espère apprendre quelque chose aussi, avec soit mon petit tutoriel fait maison ou avec mon tutoriel favori et si vous voulez en voir plus je vous ai regroupé les sites utiles sur la page "liens".<br><br>
-            Mon CV sera bientôt en ligne et si tu veux me laisser un message ou que tu as une question n'hésite pas à aller sur la page contact, j'aimerais avoir ton avis ! </p>
+        <p><img src="img/picture/cerf.png" alt="small fawn" title="Picture of a fawn">Hi there ! My name is Audrey and I'm training to be a web developer ! Early in 2020 this portfolio was a school project, but since I've adapted it to become a real presentation website with a resume/about me section, and to display my projects, on behalf of the school or on the side. I'm currently looking for a internship/traineeship between the beginning of may and the mid-June, 6 weeks totals. You can reach me by sending an e-mail via the contact page; I'll be happy to answer any question !</p>
     </div>
 </section>
