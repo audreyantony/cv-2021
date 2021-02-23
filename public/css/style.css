@@ -15,22 +15,26 @@
 html[theme=light] {
     --background: #535052;
     --sidebar-background :linear-gradient(90deg, rgba(243,240,242,1) 6%, rgba(243,240,242,0.2) 100%);
+    --paragraphe-background :rgba(200,200,200,0.6);
     --blend-mode : screen;
     --box-shadow-theme : 0 0 20px 11px rgba(223, 193, 46, 0.84);
     --container-bg: rgba(7, 3, 2, 0.75);
     --container-shadow: 0 0 5px rgba(0, 0, 0, 0.55), 5px 0 15px rgba(0, 0, 0, 0.1);
     --font-color: #535052;
+    --inverted-font-color: #F3F0F2;
 }
 
 html[theme=dark] {
     --background: #535052;
     --sidebar-background :linear-gradient(90deg, rgba(43, 40, 42,1) 6%, rgba(83, 80, 82,0.1) 100%);
+    --paragraphe-background :rgba(63, 60, 62, 0.4);
     --blend-mode : multiply;
     --box-shadow-theme : 0 0 10px 11px rgba(105, 116, 118, 0.84);
     --container-bg: rgba(255, 255, 255, 0.75);
     --container-shadow: 0 0 5px rgba(255, 255, 255, 0.25),
     5px 0 15px rgba(255, 255, 255, 0.1);
     --font-color: #F3F0F2;
+    --inverted-font-color: #535052;
 }
 
 /* BODY */
@@ -239,29 +243,44 @@ footer p {
     text-shadow: 0 3px 15px rgba(243, 240, 242, 1);
 }
 
-/* BUTTON */
+/* PAGE D'ACCUEIL */
 
-section .contenu a button {
-    text-align: center;
-    display: block;
-    margin: 30px auto;
-    padding: 15px;
-    background-color: rgba(245, 239, 244,0.8);
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    transition: 1s;
-    color: #545452;
-    cursor: pointer;
+section {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 20vh;
 }
 
-section .contenu a button:hover {
-    background-color: rgb(245, 239, 244);
-    letter-spacing: 5px;
+section .contenu {
+    margin: 40vh auto 20vh auto;
+    transform: translateY(-40%);
+}
+
+section .contenu h1 {
+    text-align: left;
+    margin: 20px auto 0 3%;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 5rem;
+    font-weight: normal;
+    color: var(--font-color);
     transition: 1s;
 }
 
-section .contenu a {
-    text-decoration: none;
-    color: inherit;
+section .contenu p {
+    background-color: var(--paragraphe-background);
+    padding: 40px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    transition: 1s;
+    color: var(--font-color);
+}
+
+section .contenu p img {
+    float: right;
+    width: 550px;
+    position: relative;
+    bottom: 260px;
+    left: 50px;
+    opacity: 80%;
 }
