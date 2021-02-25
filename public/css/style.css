@@ -53,6 +53,10 @@ html {
     --trans-time-func: cubic-bezier(0.175, 0.885, 0.32, 1.075);
 }
 
+body {
+    overflow: hidden;
+}
+
 /* DARK/LIGHT THEME BUTTON */
 
 .toggle {
@@ -247,13 +251,13 @@ footer p {
 
 section {
     width: 80%;
+    max-width: 1400px;
     margin: 0 auto;
-    min-height: 20vh;
 }
 
 section .contenu {
-    margin: 40vh auto 20vh auto;
-    transform: translateY(-40%);
+    margin: 48vh auto 0 auto;
+    transform: translateY(-50%);
 }
 
 section .contenu h1 {
@@ -269,7 +273,7 @@ section .contenu h1 {
 section .contenu p {
     background-color: var(--paragraphe-background);
     padding: 40px;
-    text-align: justify;
+    text-align: right;
     letter-spacing: 1px;
     font-size: 1.3em;
     transition: 1s;
@@ -278,9 +282,9 @@ section .contenu p {
 
 section .contenu p img {
     float: right;
-    width: 550px;
+    width: 700px;
     position: relative;
-    bottom: 260px;
+    bottom: 280px;
     left: 50px;
     opacity: 80%;
 }
