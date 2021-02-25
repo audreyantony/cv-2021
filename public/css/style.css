@@ -15,10 +15,12 @@
 html[theme=light] {
     --background: #535052;
     --sidebar-background :linear-gradient(90deg, rgba(243,240,242,1) 6%, rgba(243,240,242,0.2) 100%);
-    --paragraphe-background :rgba(200,200,200,0.6);
+    --paragraphe-background :rgba(200,200,200,0.8);
+    --section-background :rgba(200,200,200,0.9);
     --blend-mode : screen;
     --box-shadow-theme : 0 0 20px 11px rgba(223, 193, 46, 0.84);
     --container-bg: rgba(7, 3, 2, 0.75);
+    --inverted-container-bg: rgba(255, 255, 255, 0.45);
     --container-shadow: 0 0 5px rgba(0, 0, 0, 0.55), 5px 0 15px rgba(0, 0, 0, 0.1);
     --font-color: #535052;
     --inverted-font-color: #F3F0F2;
@@ -27,10 +29,12 @@ html[theme=light] {
 html[theme=dark] {
     --background: #535052;
     --sidebar-background :linear-gradient(90deg, rgba(43, 40, 42,1) 6%, rgba(83, 80, 82,0.1) 100%);
-    --paragraphe-background :rgba(63, 60, 62, 0.4);
+    --paragraphe-background :rgba(63, 60, 62, 0.6);
+    --section-background :rgba(63, 60, 62, 0.8);
     --blend-mode : multiply;
     --box-shadow-theme : 0 0 10px 11px rgba(105, 116, 118, 0.84);
     --container-bg: rgba(255, 255, 255, 0.75);
+    --inverted-container-bg: rgba(7, 3, 2, 0.45);
     --container-shadow: 0 0 5px rgba(255, 255, 255, 0.25),
     5px 0 15px rgba(255, 255, 255, 0.1);
     --font-color: #F3F0F2;
@@ -285,6 +289,348 @@ section .contenu p img {
     width: 700px;
     position: relative;
     bottom: 280px;
-    left: 50px;
+    left: 70px;
+    opacity: 90%;
+}
+
+/* ABOUT PAGE */
+
+#about {
+    width: 100vw;
+    max-width: 2200px;
+}
+
+section .about-top {
+    color: var(--font-color);
+    width: 100%;
+    height: 25vh;
+    margin-top: 5vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1%;
+    grid-template-areas:
+            "about-tel about-name about-mail";
+}
+
+section .about-top #about-tel {
+    grid-area: about-tel;
+}
+
+section .about-top #about-tel .icon {
+    height: 150px;
+    width: 150px;
+    background-color: lightgray;
+    display: inline-block;
+}
+
+section .about-top #about-name {
+    grid-area: about-name;
+}
+
+section .about-top #about-tel p {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 2.5em;
+}
+
+section .about-top #about-name h1 {
+    margin-top: 30px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-size: 3.8em;
+    text-transform: uppercase;
+    background-color: var(--paragraphe-background);
+    width: 100%;
+}
+
+section .about-top #about-name h3 {
+    letter-spacing: 5px;
+    font-size: 1.9em;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: var(--paragraphe-background);
+    font-family: 'Permanent Marker', sans-serif;
     opacity: 80%;
+}
+
+section .about-top #about-name p {
+    opacity: 80%;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 1.6em;
+}
+
+section .about-top #about-mail {
+    grid-area: about-mail;
+}
+
+section .about-top #about-mail .icon {
+    height: 150px;
+    width: 150px;
+    background-color: lightgrey;
+    display: inline-block;
+}
+
+section .about-top #about-mail p {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 2.5em;
+}
+
+section .about-middle {
+     color: var(--font-color);
+     width: 20vw;
+     height: 200vh;
+     margin-top: 5vh;
+     text-align: center;
+     transform: rotate(-90deg) translateX(-35vh) translateY(-5vw);
+     transform-origin: top left;
+     overflow-x: hidden;
+     -ms-overlow-style: none;
+     scrollbar-width: none;
+ }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+section .about-middle .horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 240vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    overflow-y: hidden;
+}
+
+section .about-middle .horizontal .slide {
+    width: 60vw;
+    padding: 50px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: var(--font-color);
+    background-color: var(--section-background);
+    position: relative;
+    right: 5vh;
+    top: 60vh;
+}
+section .about-middle .horizontal .slide h3 {
+    display: block;
+    margin: 15px;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 1.4em;
+    color: var(--font-color);
+    letter-spacing: 3px;
+}
+
+section .about-middle .horizontal .one p {
+    margin: 0 20%;
+    text-align: justify;
+    font-weight: 300;
+}
+
+section .about-middle .horizontal .two ul, section .about-middle .horizontal .four ul {
+    list-style-type: none;
+    margin: 30px 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: normal;
+    align-content: space-around;
+}
+
+section .about-middle .horizontal .two li, section .about-middle .horizontal .four li {
+    flex: 0 0 auto;
+    margin: 40px;
+    width: 25%;
+}
+
+section .about-middle .horizontal .three ul {
+    list-style-type: none;
+    margin: 30px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: normal;
+    align-content: space-around;
+}
+
+section .about-middle .horizontal .three li {
+    flex: 0 0 auto;
+    margin: 5px;
+    width: 25%;
+}
+
+section .about-bottom {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 0;
+    grid-template-areas:
+            "languages main-about-img interest";
+}
+
+section .about-bottom #languages {
+    grid-area: languages;
+    position: relative;
+    left: 20%;
+}
+
+section .about-bottom div h3 {
+    display: block;
+    margin: 15px;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 1.9em;
+    color: var(--font-color);
+    letter-spacing: 3px;
+}
+
+section .about-bottom div ul {
+    list-style-type: none;
+    margin: 20px 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: normal;
+    align-content: space-around;
+}
+
+section .about-bottom div li {
+    flex: 0 0 auto;
+    margin: 25px;
+    width: 25%;
+    color: var(--font-color);
+}
+
+section .about-bottom #main-about-img {
+    grid-area: main-about-img;
+}
+
+section .about-bottom #interest {
+    grid-area: interest;
+    position: relative;
+    right: 20%;
+}
+
+/* CONTACT PAGE */
+
+section .contenu form {
+    background-color: var(--paragraphe-background);
+    padding: 2% 5%;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    transition: 1s;
+    color: #545452;
+}
+section .contenu form .warning {
+    height: 25px;
+    padding-left: 1em;
+    color: var(--font-color);
+}
+
+section .contenu form img {
+    position: absolute;
+    bottom: 16vh;
+    right: 1vw;
+    width: 400px;
+    opacity: 85%;
+}
+
+section .contenu form .grid-container {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10% 10%;
+    grid-template-areas:
+            "name name msg msg"
+            "email email msg msg"
+            "phone phone msg msg";
+}
+
+section .contenu form .grid-container .name {
+    grid-area: name;
+}
+
+section .contenu form .grid-container .email {
+    grid-area: email;
+}
+
+section .contenu form .grid-container .phone {
+    grid-area: phone;
+}
+
+section .contenu form .grid-container .msg {
+    grid-area: msg;
+}
+
+section .contenu form div input {
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--inverted-font-color);
+    color: var(--font-color);
+    letter-spacing: 3px;
+    border: none;
+}
+
+section .contenu form input {
+    color: var(--font-color);
+}
+
+form div textarea {
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+    height: 100%;
+    background-color: var(--inverted-font-color);
+    color: var(--font-color);
+    letter-spacing: 3px;
+    border: none;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section .contenu form div input::placeholder {
+    letter-spacing: 2px;
+    opacity: 0.4;
+}
+
+section .contenu form div textarea::placeholder {
+    letter-spacing: 2px;
+    opacity: 0.4;
+}
+
+section .contenu form .btnenvoyer {
+    display: block;
+    position: relative;
+    left: 40%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: var(--font-color);
+    opacity: 70%;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    transition: 1s;
+    color: var(--inverted-font-color);
+}
+
+section .contenu form .btnenvoyer:hover {
+    background-color: var(--font-color);
+    opacity: 90%;
+    transition: 1s;
+    cursor: pointer;
 }
