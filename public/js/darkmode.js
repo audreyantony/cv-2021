@@ -26,4 +26,5 @@ function init(){
         textCheckBox.innerHTML = "Light theme";
     }
 }
+
 init();

@@ -15,11 +15,12 @@
 html[theme=light] {
     --background: #535052;
     --sidebar-background :linear-gradient(90deg, rgba(243,240,242,1) 6%, rgba(243,240,242,0.2) 100%);
-    --paragraphe-background :rgba(200,200,200,0.6);
+    --paragraphe-background :rgba(200,200,200,0.8);
     --section-background :rgba(200,200,200,0.9);
     --blend-mode : screen;
     --box-shadow-theme : 0 0 20px 11px rgba(223, 193, 46, 0.84);
     --container-bg: rgba(7, 3, 2, 0.75);
+    --inverted-container-bg: rgba(255, 255, 255, 0.45);
     --container-shadow: 0 0 5px rgba(0, 0, 0, 0.55), 5px 0 15px rgba(0, 0, 0, 0.1);
     --font-color: #535052;
     --inverted-font-color: #F3F0F2;
@@ -28,11 +29,12 @@ html[theme=light] {
 html[theme=dark] {
     --background: #535052;
     --sidebar-background :linear-gradient(90deg, rgba(43, 40, 42,1) 6%, rgba(83, 80, 82,0.1) 100%);
-    --paragraphe-background :rgba(63, 60, 62, 0.4);
+    --paragraphe-background :rgba(63, 60, 62, 0.6);
     --section-background :rgba(63, 60, 62, 0.8);
     --blend-mode : multiply;
     --box-shadow-theme : 0 0 10px 11px rgba(105, 116, 118, 0.84);
     --container-bg: rgba(255, 255, 255, 0.75);
+    --inverted-container-bg: rgba(7, 3, 2, 0.45);
     --container-shadow: 0 0 5px rgba(255, 255, 255, 0.25),
     5px 0 15px rgba(255, 255, 255, 0.1);
     --font-color: #F3F0F2;
@@ -287,8 +289,8 @@ section .contenu p img {
     width: 700px;
     position: relative;
     bottom: 280px;
-    left: 50px;
-    opacity: 80%;
+    left: 70px;
+    opacity: 90%;
 }
 
 /* ABOUT PAGE */
@@ -377,17 +379,17 @@ section .about-top #about-mail p {
 }
 
 section .about-middle {
-    color: var(--font-color);
-    width: 20vw;
-    height: 200vh;
-    margin-top: 5vh;
-    text-align: center;
-    transform: rotate(-90deg) translateX(-35vh) translateY(-5vw);
-    transform-origin: top left;
-    overflow-x: hidden;
-    -ms-overlow-style: none;
-    scrollbar-width: none;
-}
+     color: var(--font-color);
+     width: 20vw;
+     height: 200vh;
+     margin-top: 5vh;
+     text-align: center;
+     transform: rotate(-90deg) translateX(-35vh) translateY(-5vw);
+     transform-origin: top left;
+     overflow-x: hidden;
+     -ms-overlow-style: none;
+     scrollbar-width: none;
+ }
 
 ::-webkit-scrollbar {
     display: none;
@@ -519,4 +521,116 @@ section .about-bottom #interest {
     grid-area: interest;
     position: relative;
     right: 20%;
+}
+
+/* CONTACT PAGE */
+
+section .contenu form {
+    background-color: var(--paragraphe-background);
+    padding: 2% 5%;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    transition: 1s;
+    color: #545452;
+}
+section .contenu form .warning {
+    height: 25px;
+    padding-left: 1em;
+    color: var(--font-color);
+}
+
+section .contenu form img {
+    position: absolute;
+    bottom: 16vh;
+    right: 1vw;
+    width: 400px;
+    opacity: 85%;
+}
+
+section .contenu form .grid-container {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10% 10%;
+    grid-template-areas:
+            "name name msg msg"
+            "email email msg msg"
+            "phone phone msg msg";
+}
+
+section .contenu form .grid-container .name {
+    grid-area: name;
+}
+
+section .contenu form .grid-container .email {
+    grid-area: email;
+}
+
+section .contenu form .grid-container .phone {
+    grid-area: phone;
+}
+
+section .contenu form .grid-container .msg {
+    grid-area: msg;
+}
+
+section .contenu form div input {
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--inverted-font-color);
+    color: var(--font-color);
+    letter-spacing: 3px;
+    border: none;
+}
+
+section .contenu form input {
+    color: var(--font-color);
+}
+
+form div textarea {
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+    height: 100%;
+    background-color: var(--inverted-font-color);
+    color: var(--font-color);
+    letter-spacing: 3px;
+    border: none;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section .contenu form div input::placeholder {
+    letter-spacing: 2px;
+    opacity: 0.4;
+}
+
+section .contenu form div textarea::placeholder {
+    letter-spacing: 2px;
+    opacity: 0.4;
+}
+
+section .contenu form .btnenvoyer {
+    display: block;
+    position: relative;
+    left: 40%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: var(--font-color);
+    opacity: 70%;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    transition: 1s;
+    color: var(--inverted-font-color);
+}
+
+section .contenu form .btnenvoyer:hover {
+    background-color: var(--font-color);
+    opacity: 90%;
+    transition: 1s;
+    cursor: pointer;
 }
