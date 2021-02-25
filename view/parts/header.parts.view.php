@@ -39,10 +39,10 @@
             </div>
         </div>
         <div class="socialmedia">
-            <a href="https://www.facebook.com/audrey.antony.calzi" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-            <a href="https://www.instagram.com/antony_audrey/?hl=fr" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-            <a href="https://github.com/audreyantony" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/audrey-antony-b7754084/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://www.facebook.com/audrey.antony.calzi" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+            <a href="https://www.instagram.com/antony_audrey/?hl=fr" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+            <a href="https://github.com/audreyantony" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/audrey-antony-b7754084/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
         </div>
     </nav>
 </header>
