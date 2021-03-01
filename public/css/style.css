@@ -490,10 +490,61 @@ section .about-middle .horizontal .three ul {
     align-content: space-around;
 }
 
-section .about-middle .horizontal .three li {
+section .about-middle .horizontal .three ul li {
     flex: 0 0 auto;
     margin: 5px;
-    width: 25%;
+    width: 17%;
+}
+
+section .about-middle .horizontal .three ul li h6 {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+section .about-middle .horizontal .three ul li p {
+    font-weight: 200;
+    font-size: 0.8em;
+    margin-bottom: 25px;
+}
+
+section .about-middle .horizontal .three ul li p i {
+    opacity: 80%;
+    font-size: 0.8em;
+}
+
+
+section .about-middle .horizontal .two ul li h6 {
+    font-weight: 400;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+section .about-middle .horizontal .two ul li p {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+section .about-middle .horizontal .four ul li {
+    flex: 0 0 auto;
+    margin: 5px;
+    width: 35%;
+}
+
+section .about-middle .horizontal .four ul li h6 {
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+section .about-middle .horizontal .four ul li h6 span{
+    font-weight: 300;
+    font-size: 0.6em;
+}
+
+section .about-middle .horizontal .four ul li p {
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-bottom: 25px;
 }
 
 section .about-bottom {
@@ -516,6 +567,12 @@ section .about-bottom #languages {
     left: 20%;
 }
 
+section .about-bottom #languages ul li h6{
+    font-weight: 400;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
 section .about-bottom div h3 {
     display: block;
     margin: 15px;
@@ -528,7 +585,7 @@ section .about-bottom div h3 {
 
 section .about-bottom div ul {
     list-style-type: none;
-    margin: 20px 20%;
+    margin: 20px 15%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -540,7 +597,7 @@ section .about-bottom div ul {
 section .about-bottom div li {
     flex: 0 0 auto;
     margin: 25px;
-    width: 25%;
+    width: 35%;
     color: var(--font-color);
 }
 
@@ -561,6 +618,11 @@ section .about-bottom #interest {
     grid-area: interest;
     position: relative;
     right: 20%;
+}
+section .about-bottom #interest ul li h6 {
+    font-weight: 400;
+    font-size: 1.4em;
+    text-transform: uppercase;
 }
 
 /* CONTACT PAGE */
