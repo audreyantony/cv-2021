@@ -1,7 +1,7 @@
 <section id="about">
     <div class="about-top">
         <div id="about-tel">
-            <span class="icon"></span>
+            <i class="fa fa-mobile" aria-hidden="true"></i>
             <p>+ 32 4 95 19 68 74</p>
         </div>
         <div id="about-name">
@@ -10,13 +10,15 @@
             <p>27 ans | Genappe | permis B</p>
         </div>
         <div id="about-mail">
-            <span class="icon"></span>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
             <p>audrey@calzi.fr</p>
         </div>
     </div>
+    <p id="scroll-down">Scroll down to go right >></p>
+    <p id="scroll-up"><< Scroll up to go left</p>
     <div class="about-middle">
         <div class="horizontal">
-            <div class="slide one">
+            <div id="scroll-left" class="slide one">
                 <h3>About</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tempus nisi. Maecenas eu nulla metus. Quisque pellentesque tellus auctor risus efficitur suscipit. Donec a convallis turpis. Curabitur semper malesuada diam sit amet posuere. Maecenas euismod diam at nibh lobortis finibus. Quisque lacinia posuere dapibus. Phasellus pharetra lorem ut turpis ultrices, nec consequat elit ornare. Praesent maximus elit lorem, ut porttitor sem mollis vitae.</p>
             </div>
@@ -44,7 +46,7 @@
                     <li><h6>SKILL</h6><p>INFO SUPP</p></li>
                 </ul>
             </div>
-            <div class="slide four">
+            <div id="scroll-right" class="slide four">
                 <h3>WORK EXPRERIENCE</h3>
                 <ul>
                     <li><h6>TRUC <span>YEAR - YEAR</span></h6><p>INFO SUPP</p></li>
@@ -66,7 +68,7 @@
             </ul>
         </div>
         <div id="main-about-img">
-            <img src="https://via.placeholder.com/300" alt="" title="">
+            <img src="img/picture/fox.png" alt="picture fox" title=" small drawing of a fox">
         </div>
         <div id="interest">
             <h3>Interest</h3>
@@ -79,3 +81,4 @@
         </div>
     </div>
 </section>
+<script type="text/javascript" src="js/scroll.js"></script>
