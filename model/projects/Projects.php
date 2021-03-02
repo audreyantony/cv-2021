@@ -11,6 +11,7 @@ class Projects {
     private string $altImgProjects;
     private string $titleImgProjects;
     private int $user_idUser;
+    private string $loginUser;
 
 
     /**
@@ -137,9 +138,9 @@ class Projects {
     }
 
     /**
- * $altImgProjects's getter
- * @return string
- */
+    * $altImgProjects's getter
+     * @return string
+    */
     public function getaltImgProjects() {
         return html_entity_decode($this->altImgProjects,ENT_QUOTES);
     }
@@ -195,5 +196,28 @@ class Projects {
      */
     public function setuser_idUser(int $user_idUser): void {
         $this->user_idUser = $user_idUser;
+    }
+
+    /**
+     * $loginUser's getter
+     * @return string
+     */
+    public function getloginUser(): string
+    {
+        return $this->loginUser;
+    }
+
+    /**
+     * $loginUser's setter
+     * @param string $loginUser
+     */
+    public function setloginUser(string $loginUser): void
+    {
+        $loginUser = strip_tags(trim($loginUser));
+        if(strlen($loginUser)>80){
+            trigger_error("The login can't be too long, the maximum is 80 characters",E_USER_NOTICE );
+        }else {
+            $this->loginUser = $loginUser;
+        }
     }
 }

@@ -19,8 +19,8 @@ class UserManager {
      * @return bool|string
      */
     public function connectUser(User $user) {
-        $sql = "SELECT * FROM user WHERE loginUser = ? ;";
-        $req = $this->connect->prepare($sql);
+        $query = "SELECT idUser, loginUser, pwdUser, mailUser FROM user WHERE loginUser = ? ;";
+        $req = $this->connect->prepare($query);
         $req->bindValue(1,$user->getloginUser(),PDO::PARAM_STR);
         try{
             $req->execute();

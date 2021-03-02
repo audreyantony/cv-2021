@@ -19,7 +19,7 @@ try{
 }
 
 // MANAGERS
-// $projectsManager = new ProjectsManager($connection);
+$projectsManager = new ProjectsManager($connection);
 $userManager = new UserManager($connection);
 
 // ADMIN CONTROLLER IF SOMEONE IS CONNECTED AND IF THIS PERSON HAS A PERMISSION
