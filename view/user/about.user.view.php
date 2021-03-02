@@ -20,7 +20,7 @@
         <div class="horizontal">
             <div id="scroll-left" class="slide one">
                 <h3>About</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tempus nisi. Maecenas eu nulla metus. Quisque pellentesque tellus auctor risus efficitur suscipit. Donec a convallis turpis. Curabitur semper malesuada diam sit amet posuere. Maecenas euismod diam at nibh lobortis finibus. Quisque lacinia posuere dapibus. Phasellus pharetra lorem ut turpis ultrices, nec consequat elit ornare. Praesent maximus elit lorem, ut porttitor sem mollis vitae.</p>
+                <p>I’m a self-motivated, adaptable person who has developed a responsible approach to any task or situation that I am presented with. I have management skills from previous employment and some design skills from prior studies. I am very good at working with others to achieve a certain objective on time and do it well.<br><br> After a one-year and three-month web developer training at CF2m in Brussels, I aspire to find an end-of-study internship in the prospect of improving my skills (PHP, Javascript, HTML -CSS, Python .. .), to carry on my learning and to acquire a first professional experience in the field.</p>
             </div>
             <div class="slide two">
                 <h3>Education</h3>
