@@ -736,3 +736,43 @@ section .contenu form .btnenvoyer:hover {
     transition: 1s;
     cursor: pointer;
 }
+
+/* CONNECTION */
+
+section .contenu form {
+    width: 100%;
+    height: 25vh;
+    background-color: var(--paragraphe-background);
+    font-size: 1.3em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section .contenu form input {
+    margin: 40px 0 0 0;
+}
+
+section .contenu form small {
+    color: var(--font-color);
+    font-weight: 300;
+}
+
+section .contenu form button {
+    display: flex;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: var(--font-color);
+    opacity: 70%;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    transition: 1s;
+    color: var(--inverted-font-color);
+}
+
+section .contenu form button:hover {
+    background-color: var(--font-color);
+    opacity: 90%;
+    transition: 1s;
+    cursor: pointer;
+}

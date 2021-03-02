@@ -20,7 +20,7 @@ try{
 
 // MANAGERS
 // $projectsManager = new ProjectsManager($connection);
-// $userManager = new UserManager($connection);
+$userManager = new UserManager($connection);
 
 // ADMIN CONTROLLER IF SOMEONE IS CONNECTED AND IF THIS PERSON HAS A PERMISSION
 if(isset($_SESSION['session_id'])&&$_SESSION['session_id']==session_id()){
