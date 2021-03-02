@@ -3,7 +3,7 @@
         <!-- TITLE -->
         <h1>{ Connection }</h1>
         <!-- FORM -->
-        <form method="post">
+        <form id="connect" method="post">
             <?php
             if (isset($help)){
                 echo "<small>".$help."</small>";

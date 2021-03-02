@@ -1,6 +1,6 @@
 <section>
     <div class="contenu">
-        <h1>Yo !</h1>
+        <h1>{ Hello You }</h1>
         <div class="links">
             <h3>Wanna go check the user pages ?</h3>
             <a href="?page=home"><button>Home</button></a>
@@ -8,10 +8,11 @@
             <a href="?page=projects"><button>Projects</button></a>
             <a href="?page=contact"><button>Contact</button></a>
         </div>
-        <h3>Wanna manage the projects ?</h3>
+
         <div class="projects">
+            <h3>Wanna manage the projects ?</h3>
             <div class="projectDisplay">
-                <a href="?admin=projects&create=new?>"><button>Create a new project</button></a>
+                <a href="?admin=projects&create=new"><button>Create <br>a new <br>project</button></a>
             </div>
             <?php
             if(isset($help)) :
