@@ -16,10 +16,6 @@ if (isset($_GET['admin'])) {
         case "projects":
             include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'controller' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'projects.admin.controller.php';
             break;
-        // CONTACT ADMIN PAGE
-        case "contact":
-            include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'controller' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'contact.admin.controller.php';
-            break;
         // DISCONNECTION ADMIN PAGE
         case "disconnection":
             include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'controller' . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR . 'disconnection.public.controller.php';

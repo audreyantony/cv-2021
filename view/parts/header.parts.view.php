@@ -18,7 +18,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <ul class="menu">
             <?php
-            if (isset($_SESSION['session_id']) && $_SESSION['session_id']==session_id()){
+            if (isset($_SESSION['sessionId']) && $_SESSION['sessionId']==session_id()){
                 echo '<a href="?admin=home"><li>Admin Home</li></a>';
                 echo '<a href="?admin=projects"><li>Projects</li></a>';
                 echo '<a href="?admin=contact"><li>Contact</li></a>';
