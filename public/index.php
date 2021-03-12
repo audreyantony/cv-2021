@@ -5,11 +5,12 @@ session_start();
 
 /* DEPENDENCIES */
 require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'bin' . DIRECTORY_SEPARATOR . 'config.php';
-require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'myPDO.php';
-require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'projects' . DIRECTORY_SEPARATOR . 'Projects.php';
-require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'user' . DIRECTORY_SEPARATOR . 'User.php';
-require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'projects' . DIRECTORY_SEPARATOR . 'ProjectsManager.php';
-require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . 'user' . DIRECTORY_SEPARATOR . 'UserManager.php';
+
+spl_autoload_register(
+    function($className){
+        require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'model' . DIRECTORY_SEPARATOR . $className .".php";
+    }
+);
 
 // DB CONNECTION
 try{

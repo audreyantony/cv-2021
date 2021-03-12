@@ -25,10 +25,12 @@ class UserManager {
         try{
             $req->execute();
             if($req->rowCount()){
-                if (password_verify($user->getpwdUser(), $req->fetchColumn(2))){
-                    $_SESSION = $req->fetch(PDO::FETCH_ASSOC);
+                $_SESSION = $req->fetch(PDO::FETCH_ASSOC);
+                if (password_verify($user->getpwdUser(), $_SESSION['pwdUser'])){
                     $_SESSION['sessionId'] = session_id();
                     return true;
+                } else {
+                    session_destroy();
                 }
             }else{
                 return false;
