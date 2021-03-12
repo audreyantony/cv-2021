@@ -1,6 +1,6 @@
 <section>
     <div class="contenu">
-        <h1>{ Hello You }</h1>
+        <h1>{ Hello <?=$_SESSION['loginUser']?> }</h1>
         <div class="links">
             <h3>Wanna go check the user pages ?</h3>
             <a href="?page=home"><button>Home</button></a>
@@ -24,7 +24,7 @@
                     ?>
                 <div class="projectDisplay">
                     <h4><?=$i->gettitleProjects()?></h4>
-                    <img src="<?=$i->getimgNameProjects()?>" alt="<?=$i->getaltImgProjects()?>" title="<?=$i->gettitleImgProjects()?>">
+                    <img src="<?=TARGET_DIR?><?=$i->getimgNameProjects()?>" alt="<?=$i->getaltImgProjects()?>" title="<?=$i->gettitleImgProjects()?>">
                     <p><?=$i->getdescProjects()?></p>
                     <a href="<?=$i->geturlProjects()?>"><?=$i->geturlProjects()?></a>
                     <h5>Par <?=$i->getloginUser()?></h5>

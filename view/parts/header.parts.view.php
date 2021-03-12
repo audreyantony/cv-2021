@@ -20,8 +20,6 @@
             <?php
             if (isset($_SESSION['sessionId']) && $_SESSION['sessionId']==session_id()){
                 echo '<a href="?admin=home"><li>Admin Home</li></a>';
-                echo '<a href="?admin=projects"><li>Projects</li></a>';
-                echo '<a href="?admin=contact"><li>Contact</li></a>';
                 echo '<a href="?admin=disconnection"><li>Disconnection</li></a>';
             } else {
                 echo '<a href="?page=home"><li>Home</li></a>';

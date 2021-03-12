@@ -111,7 +111,7 @@ class Projects {
         $url = strip_tags(trim($urlProjects),"<br>,<p>,<div>,<a>");
         if(empty($url)){
             trigger_error("The project url can't be empty",E_USER_NOTICE);
-        }else {
+        } else {
             $this->urlProjects = $url;
         }
     }

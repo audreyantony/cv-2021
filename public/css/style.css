@@ -821,6 +821,14 @@ section .contenu .projects {
     text-align: center;
     padding: 60px;
     margin-top : 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: start;
+    max-height: 650px;
+    overflow-y: scroll;
 }
 
 section .contenu .projects h3 {
@@ -828,12 +836,17 @@ section .contenu .projects h3 {
     font-weight: 300;
     font-size: 1.3em;
     color: var(--font-color);
+    display: block;
+    width: 100%;
+    padding: 30px 30px 60px 30px;
 }
 
 section .contenu .projects .projectDisplay {
     width: 18%;
-    margin: 1%;
-    height: 200px;
+    margin: 2%;
+    max-height: 350px;
+    flex: 0 0 auto;
+    background-color: var(--inverted-font-color);
 }
 
 section .contenu .projects .projectDisplay button {
@@ -843,7 +856,7 @@ section .contenu .projects .projectDisplay button {
     background-color: var(--inverted-font-color);
     text-transform: uppercase;
     font-weight: 200;
-    margin: 15% 20px;
+    margin: 5% 10px;
     opacity: 75%;
     letter-spacing: 5px;
     transition: 0.5s;
@@ -852,4 +865,30 @@ section .contenu .projects .projectDisplay button {
 section .contenu .projects .projectDisplay button:hover {
     opacity: 100%;
     transition: 0.5s;
+}
+
+section .contenu .projects .projectDisplay h4 {
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: var(--font-color);
+}
+
+section .contenu .projects .projectDisplay img {
+    width: 80%;
+    height: 105px;
+}
+
+section .contenu .projects .projectDisplay p {
+    background-color: var(--inverted-font-color);
+    width: 100%;
+    font-size: 0.7em;
+    padding: 5px;
+    text-align: center;
+}
+
+section .contenu .projects .projectDisplay a {
+
 }

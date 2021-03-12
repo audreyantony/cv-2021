@@ -1,7 +1,7 @@
 <section>
     <div class="contenu">
         <h1>{ Contact }</h1>
-        <form method="post" >
+        <form method="post">
             <?php
             if (isset($warning)){
                 echo "<span class='warning'>".$warning."</span>";
