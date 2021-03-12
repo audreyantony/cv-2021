@@ -50,5 +50,25 @@ if(isset($_GET['create'])){
     // VIEW
     include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'update.admin.view.php';
 
+} else if(isset($_GET['delete']) && ctype_digit($_GET['delete'])){
+
+    if(isset($_GET['ok'])){
+
+        $delete = $projectsManager->deleteProject($_GET['delete']);
+        if($delete){
+            header("Location: ?admin=home");
+            exit();
+        }
+    }
+
+    $recupProject = $projectsManager->readOneProjectById($_GET['delete']);
+    if(!empty($recupProject)){
+        $project = new Projects($recupProject);
+    } else {
+        header('Location: ./');
+    }
+
+    // VIEW
+    include dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'delete.admin.view.php';
 }
 

@@ -127,6 +127,33 @@ class ProjectsManager {
     }
 
     /**
+     * @param int $id
+     * @return bool
+     */
+    public function deleteProject(int $id){
+
+        $sql = "DELETE FROM projects WHERE idProjects = ?";
+        $prepare = $this->connect->prepare($sql);
+        return $prepare->execute([$id]);
+
+
+    }
+
+    /**
+     * @param int $id
+     * @return array
+     */
+    public function readOneProjectById($id){
+        $sql="SELECT * FROM projects WHERE idProjects = ? ";
+        $request = $this->connect->prepare($sql);
+        $request->execute([$id]);
+        if($request->rowCount()){
+            return $request->fetch(PDO::FETCH_ASSOC);
+        }
+        return [];
+    }
+
+    /**
      * @param  $file
      * @return array
      */

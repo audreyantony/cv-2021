@@ -917,3 +917,50 @@ section .contenu .projects .projectDisplay h5 {
     padding: 5px;
     font-size: 0.9em;
 }
+
+section .contenu .delete {
+    color: var(--font-color);
+    background-color: var(--inverted-font-color);
+    height: 500px;
+}
+
+section .contenu .delete h3 {
+    text-align: center;
+    padding: 40px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 200;
+}
+
+section .contenu .delete img {
+    width :20%;
+    float: left;
+    margin: 1% 7% 5% 10%;
+}
+
+section .contenu .delete p {
+    width :100%;
+    background-color: var(--inverted-font-color);
+    text-align: justify;
+    padding: 20px 50px 40px 0;
+}
+
+section .contenu .delete button {
+    padding: 10px;
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    background-color: var(--inverted-font-color);
+    text-transform: uppercase;
+    font-weight: 200;
+    margin: 5% 10px;
+    opacity: 75%;
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+
+section .contenu .delete button:hover {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
