@@ -25,7 +25,7 @@
                 <div class="projectDisplay">
                     <h4><?=$i->gettitleProjects()?></h4>
                     <img src="<?=TARGET_DIR?><?=$i->getimgNameProjects()?>" alt="<?=$i->getaltImgProjects()?>" title="<?=$i->gettitleImgProjects()?>">
-                    <p><?=$i->getdescProjects()?></p>
+                    <p><?=$i->getdescProjects()?> ...</p>
                     <a href="<?=$i->geturlProjects()?>"><?=$i->geturlProjects()?></a>
                     <h5>Par <?=$i->getloginUser()?></h5>
                     <a href="?admin=projects&update=<?=$i->getidProjects()?>"><button>Update</button></a>
@@ -35,6 +35,9 @@
                 endforeach;
             endif;
             ?>
+            <div class="theEnd">
+                <p>The end</p>
+            </div>
         </div>
     </div>
 </section>

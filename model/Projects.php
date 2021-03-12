@@ -23,7 +23,6 @@ class Projects {
     }
 
     /**
-     * Projects Theuser
      * @param array $datas
      */
     private function hydrate(Array $datas) {

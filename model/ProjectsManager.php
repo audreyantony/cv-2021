@@ -32,6 +32,23 @@ class ProjectsManager {
     }
 
     /**
+     * readProjectById()
+     * @return array
+     */
+    public function readProjectById($id): array{
+        $query="SELECT idProjects, titleProjects, descProjects, urlProjects, imgNameProjects, altImgProjects, titleImgProjects, user_idUser, loginUser
+        FROM projects
+        INNER JOIN user
+        ON user_idUser = idUser
+        WHERE idProjects = ".$id.";";
+        $request = $this->connect->query($query);
+        if($request->rowCount()){
+            return $request->fetch(PDO::FETCH_ASSOC);
+        }
+        return [];
+    }
+
+    /**
      * @param Projects $project
      * @param int $idUser
      * @param $file
@@ -52,6 +69,49 @@ class ProjectsManager {
             $prepare->bindValue(2,$project->getdescProjects(),PDO::PARAM_STR);
             $prepare->bindValue(3,$project->geturlProjects(),PDO::PARAM_STR);
             $prepare->bindValue(4,$file['name'],PDO::PARAM_STR);
+            $prepare->bindValue(5,$project->getaltImgProjects(),PDO::PARAM_STR);
+            $prepare->bindValue(6,$project->gettitleImgProjects(),PDO::PARAM_STR);
+            $prepare->bindValue(7,$idUser,PDO::PARAM_INT);
+
+            return [$prepare->execute(),$upload[1]];
+
+        } else {
+
+            unlink(TARGET_DIR . basename($file['name']));
+            return [false, $upload[1]];
+
+        }
+    }
+
+    /**
+     * @param Projects $project
+     * @param int $idUser
+     * @param $file
+     * @param int $idProject
+     * @param string $imgName
+     * @return array
+     */
+    public function updateProject(Projects $project, int $idUser, $file, int $idProject, string $imgName){
+
+        // UPLOADING IMAGE
+        if (!empty($file['name'])){
+            $upload = ProjectsManager::uploadImage($file);
+            $fileName = $file['name'];
+        } else {
+            $upload = [true, "Upload not necessary"];
+            $fileName = $imgName;
+        }
+
+        // IF THE UPLOAD WORKED
+        if ($upload[0]){
+
+            // INSERT IN THE DATABASE
+            $query = "UPDATE projects SET titleProjects = ? , descProjects = ? , urlProjects = ? , imgNameProjects = ?, altImgProjects = ? , titleImgProjects = ? , user_idUser = ? WHERE idProjects = ".$idProject.";";
+            $prepare = $this->connect->prepare($query);
+            $prepare->bindValue(1,$project->gettitleProjects(),PDO::PARAM_STR);
+            $prepare->bindValue(2,$project->getdescProjects(),PDO::PARAM_STR);
+            $prepare->bindValue(3,$project->geturlProjects(),PDO::PARAM_STR);
+            $prepare->bindValue(4,$fileName,PDO::PARAM_STR);
             $prepare->bindValue(5,$project->getaltImgProjects(),PDO::PARAM_STR);
             $prepare->bindValue(6,$project->gettitleImgProjects(),PDO::PARAM_STR);
             $prepare->bindValue(7,$idUser,PDO::PARAM_INT);

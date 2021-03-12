@@ -841,17 +841,34 @@ section .contenu .projects h3 {
     padding: 30px 30px 60px 30px;
 }
 
+section .contenu .projects .theEnd {
+    display: block;
+    width: 100%;
+}
+
+section .contenu .projects .theEnd p {
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--font-color);
+    font-weight: 200;
+    letter-spacing: 10px;
+}
+
+section .contenu .projects .projectDisplay:first-of-type {
+    background-color: rgba(0,0,0,0);
+}
+
 section .contenu .projects .projectDisplay {
-    width: 18%;
+    width: 28%;
     margin: 2%;
-    max-height: 350px;
     flex: 0 0 auto;
     background-color: var(--inverted-font-color);
 }
 
 section .contenu .projects .projectDisplay button {
     padding: 10px;
-    border: none;
+    border: 1px solid var(--font-color);
     color: var(--font-color);
     background-color: var(--inverted-font-color);
     text-transform: uppercase;
@@ -878,7 +895,7 @@ section .contenu .projects .projectDisplay h4 {
 
 section .contenu .projects .projectDisplay img {
     width: 80%;
-    height: 105px;
+    height: auto;
 }
 
 section .contenu .projects .projectDisplay p {
@@ -890,5 +907,13 @@ section .contenu .projects .projectDisplay p {
 }
 
 section .contenu .projects .projectDisplay a {
+    color: var(--font-color);
+    padding: 5px;
+    font-size: 0.9em;
+}
 
+section .contenu .projects .projectDisplay h5 {
+    color: var(--font-color);
+    padding: 5px;
+    font-size: 0.9em;
 }
