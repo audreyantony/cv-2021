@@ -61,7 +61,7 @@ if(isset($_GET['create'])){
         }
     }
 
-    $recupProject = $projectsManager->readOneProjectById($_GET['delete']);
+    $recupProject = $projectsManager->readProjectById($_GET['delete']);
     if(!empty($recupProject)){
         $project = new Projects($recupProject);
     } else {

@@ -32,18 +32,16 @@ class ProjectsManager {
     }
 
     /**
-     * readProjectById()
+     * readProjects()
      * @return array
      */
-    public function readProjectById($id): array{
-        $query="SELECT idProjects, titleProjects, descProjects, urlProjects, imgNameProjects, altImgProjects, titleImgProjects, user_idUser, loginUser
+    public function readAllProjects(): array{
+        $query="SELECT *
         FROM projects
-        INNER JOIN user
-        ON user_idUser = idUser
-        WHERE idProjects = ".$id.";";
+        ORDER BY idProjects DESC ;";
         $request = $this->connect->query($query);
         if($request->rowCount()){
-            return $request->fetch(PDO::FETCH_ASSOC);
+            return $request->fetchAll(PDO::FETCH_ASSOC);
         }
         return [];
     }
@@ -140,13 +138,17 @@ class ProjectsManager {
     }
 
     /**
+     * readProjectById()
      * @param int $id
      * @return array
      */
-    public function readOneProjectById($id){
-        $sql="SELECT * FROM projects WHERE idProjects = ? ";
-        $request = $this->connect->prepare($sql);
-        $request->execute([$id]);
+    public function readProjectById($id): array{
+        $query="SELECT idProjects, titleProjects, descProjects, urlProjects, imgNameProjects, altImgProjects, titleImgProjects, user_idUser, loginUser
+        FROM projects
+        INNER JOIN user
+        ON user_idUser = idUser
+        WHERE idProjects = ".$id.";";
+        $request = $this->connect->query($query);
         if($request->rowCount()){
             return $request->fetch(PDO::FETCH_ASSOC);
         }
