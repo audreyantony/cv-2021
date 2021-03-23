@@ -464,7 +464,7 @@ section .about-middle .horizontal .one p {
     margin: 0 20%;
     text-align: center;
     font-weight: 300;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 section .about-middle .horizontal .two ul, section .about-middle .horizontal .four ul {
@@ -967,6 +967,8 @@ section .contenu .delete button:hover {
     transition: 0.5s;
 }
 
+/* PROJECTS PAGE */
+
 #projects {
     width: 95%;
     max-width: 2000px;
@@ -974,6 +976,7 @@ section .contenu .delete button:hover {
 
 #projects .contenu h1 {
     margin-left: 15%;
+    margin-bottom: 50px;
 }
 
 #projects .contenu .projectsContainer {
@@ -1048,14 +1051,11 @@ section .contenu .delete button:hover {
         text-align: justify;
     }
     section .contenu p img {
-        width: 300px;
-        position: absolute;
-        bottom: 70%;
-        left: 80%;
+        display: none;
     }
 }
 
-@media screen and (max-height: 1000px){
+@media screen and (max-height: 1050px){
     body {
         overflow: scroll;
     }
@@ -1096,7 +1096,8 @@ section .contenu .delete button:hover {
         padding-left: 0;
     }
     section .about-middle .horizontal .one p {
-        margin: 1% 20%;
+        margin: 1% 15%;
+        font-size: 0.9em;
     }
     section .about-middle .horizontal .two li, section .about-middle .horizontal .four li {
         margin: 10px;
@@ -1107,82 +1108,77 @@ section .contenu .delete button:hover {
         margin: 10px 5%;
     }
     section .about-bottom {
-        text-align: center;
-        width: 100%;
         position: relative;
         top: 650px;
-        left: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #projects .contenu {
+        margin: 8vh auto 0 auto;
+        transform: translateY(-0%);
+    }
+    #projects .contenu h1 {
+        font-size: 3.5em;
+        margin-bottom: 40px;
+    }
+    section .contenu form img {
+        bottom: 28vh;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section #scroll-down {
+        display: none;
+    }
+    section #scroll-up {
+        display: none;
+    }
+    section .about-middle .horizontal .slide {
+        width: 100vw;
+        padding: 10px;
+    }
+    section .about-bottom {
+        top: 1250px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 0 0;
         grid-template-areas:
-                "languages main-about-img interest";
+                "languages interest";
     }
-
     section .about-bottom #languages {
-        grid-area: languages;
-        position: relative;
-        left: 20%;
+        transform: scale(0.8);
+        left: 0;
     }
-
-    section .about-bottom #languages ul li h6{
-        font-weight: 400;
-        font-size: 1.4em;
-        text-transform: uppercase;
-    }
-
-    section .about-bottom div h3 {
-        display: block;
-        margin: 15px;
-        font-family: 'Fredericka the Great', sans-serif;
-        font-size: 1.9em;
-        color: var(--font-color);
-        letter-spacing: 3px;
-        text-transform: uppercase;
-    }
-
     section .about-bottom div ul {
-        list-style-type: none;
-        margin: 20px 15%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: normal;
-        align-content: space-around;
+        margin: 20px 1%;
     }
-
     section .about-bottom div li {
         flex: 0 0 auto;
-        margin: 1%;
-        width: 47%;
+        margin: 2%;
+        width: 45%;
         color: var(--font-color);
     }
-
     section .about-bottom #main-about-img {
-        grid-area: main-about-img;
-        height: 25vh;
+        display: none;
     }
-
-    section .about-bottom #main-about-img img {
-        width: 20vw;
-        position: absolute;
-        bottom: 0;
-        left: 40vw;
-        opacity: 90%;
-    }
-
     section .about-bottom #interest {
-        grid-area: interest;
+        transform: scale(0.8);
+        right: 0;
+    }
+    section .about-top #about-tel {
+        font-size: 4em;
         position: relative;
-        right: 20%;
+        top: 20%;
     }
-    section .about-bottom #interest ul li h6 {
-        font-weight: 400;
-        font-size: 1.4em;
-        text-transform: uppercase;
+    section .about-top #about-mail {
+        font-size: 4em;
+        position: relative;
+        top: 20%;
     }
+}
 
-
+@media screen and (max-width: 800px) {
+    section .contenu form img {
+        bottom: 22vh;
+        width: 30%;
+    }
 }

@@ -20,7 +20,7 @@
         <div class="horizontal">
             <div id="scroll-left" class="slide one">
                 <h3>About</h3>
-                <p>I’m a self-motivated, adaptable person who has developed a responsible approach to any task or situation that I am presented with. I have management skills from previous employment and some design skills from prior studies. I am very good at working with others.<br><br> After a one-year and three-month web developer training at CF2m in Brussels, I aspire to find an end-of-study internship in the prospect of improving my skills (PHP, Javascript, HTML -CSS, Python ...), to carry on my learning and to acquire a first professional experience in the field.</p>
+                <p>I’m a self-motivated, adaptable person who has developed a responsible approach to any task or situation that I am presented with. I have management skills from previous employment and some design skills from prior studies. I am very good at working with others.<br>After a one-year and three-month web developer training at CF2m in Brussels, I aspire to find an end-of-study internship in the prospect of improving my skills (PHP, Javascript, HTML -CSS, Python ...), to carry on my learning and to acquire a first professional experience in the field.</p>
             </div>
             <div class="slide two">
                 <h3>Education</h3>
