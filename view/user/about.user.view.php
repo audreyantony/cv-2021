@@ -20,7 +20,7 @@
         <div class="horizontal">
             <div id="scroll-left" class="slide one">
                 <h3>About</h3>
-                <p>I’m a self-motivated, adaptable person who has developed a responsible approach to any task or situation that I am presented with. I have management skills from previous employment and some design skills from prior studies. I am very good at working with others to achieve a certain objective on time and do it well.<br><br> After a one-year and three-month web developer training at CF2m in Brussels, I aspire to find an end-of-study internship in the prospect of improving my skills (PHP, Javascript, HTML -CSS, Python .. .), to carry on my learning and to acquire a first professional experience in the field.</p>
+                <p>I’m a self-motivated, adaptable person who has developed a responsible approach to any task or situation that I am presented with. I have management skills from previous employment and some design skills from prior studies. I am very good at working with others.<br>After a one-year and three-month web developer training at CF2m in Brussels, I aspire to find an end-of-study internship in the prospect of improving my skills (PHP, Javascript, HTML -CSS, Python ...), to carry on my learning and to acquire a first professional experience in the field.</p>
             </div>
             <div class="slide two">
                 <h3>Education</h3>
@@ -33,46 +33,26 @@
             <div class="slide three">
                 <h3>Skills</h3>
                 <ul>
-                    <li><h6>HTML - CSS</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                        <br>good knowledge</p></li>
-                    <li><h6>PHP</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle-thin" aria-hidden="true"></i><br>
-                            intermediate knowledge</p></li>
-                    <li><h6>JavaScript</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle-thin" aria-hidden="true"></i><br>
-                            intermediate knowledge</p></li>
-                    <li><h6>Python</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle-thin" aria-hidden="true"></i>
-                            <i class="fa fa-circle-thin" aria-hidden="true"></i><br>
-                            basic knowledge</p></li>
-                    <li><h6>CMS</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle-thin" aria-hidden="true"></i><br>
-                            intermediate knowledge</p></li>
-                    <li><h6>Bootstrap</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle-thin" aria-hidden="true"></i><br>
-                            intermediate knowledge</p></li>
-                    <li><h6>SQL</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle-thin" aria-hidden="true"></i><br>
-                            intermediate knowledge</p></li>
-                    <li><h6>Workbench</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle-thin" aria-hidden="true"></i><br>
-                            intermediate knowledge</p></li>
-                    <li><h6>Git</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <i class="fa fa-circle-thin" aria-hidden="true"></i><br>
-                            intermediate knowledge</p></li>
-                    <li><h6>Photoshop</h6><p><i class="fa fa-circle" aria-hidden="true"></i>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <i class="fa fa-circle-thin" aria-hidden="true"></i><br>
-                        intermediate knowledge</p></li>
+                    <li><h6>HTML - CSS</h6>
+                        <p>good knowledge</p></li>
+                    <li><h6>PHP</h6>
+                        <p>intermediate knowledge</p></li>
+                    <li><h6>JavaScript</h6>
+                        <p>intermediate knowledge</p></li>
+                    <li><h6>Python</h6>
+                        <p>basic knowledge</p></li>
+                    <li><h6>CMS</h6>
+                        <p>intermediate knowledge</p></li>
+                    <li><h6>Bootstrap</h6>
+                        <p>intermediate knowledge</p></li>
+                    <li><h6>SQL</h6>
+                        <p>intermediate knowledge</p></li>
+                    <li><h6>Workbench</h6>
+                        <p>intermediate knowledge</p></li>
+                    <li><h6>Git</h6>
+                        <p>intermediate knowledge</p></li>
+                    <li><h6>Photoshop</h6>
+                        <p>intermediate knowledge</p></li>
                 </ul>
             </div>
             <div id="scroll-right" class="slide four">
@@ -105,7 +85,7 @@
                 <li><h6>Travel the world</h6><p>Once a year</p></li>
                 <li><h6>Movies<br>Series</h6><p>Nearly every day</p></li>
                 <li><h6>Drawing<br>Painting</h6><p>Every week</p></li>
-                <li><h6>Renovate my house</h6><p>On any occasion</p></li>
+                <li><h6>Renovating my house</h6><p>On any occasion</p></li>
             </ul>
         </div>
     </div>

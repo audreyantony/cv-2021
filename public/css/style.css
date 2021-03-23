@@ -286,9 +286,9 @@ section .contenu p {
 
 section .contenu p img {
     float: right;
-    width: 700px;
+    width: 600px;
     position: relative;
-    bottom: 280px;
+    bottom: 230px;
     left: 70px;
     opacity: 90%;
 }
@@ -360,7 +360,7 @@ section .about-top #about-name p {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-shadow: 1px 1px 0 var(--font-color);
 }
 
@@ -456,19 +456,24 @@ section .about-middle .horizontal .slide h3 {
     text-transform: uppercase;
 }
 
+section .about-middle .horizontal .one {
+    padding-left: 2.5%;
+}
+
 section .about-middle .horizontal .one p {
     margin: 0 20%;
     text-align: center;
     font-weight: 300;
+    font-size: 1em;
 }
 
 section .about-middle .horizontal .two ul, section .about-middle .horizontal .four ul {
     list-style-type: none;
-    margin: 30px 20%;
+    margin: 20px 5%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: normal;
     align-content: space-around;
 }
@@ -507,12 +512,6 @@ section .about-middle .horizontal .three ul li p {
     margin-bottom: 25px;
 }
 
-section .about-middle .horizontal .three ul li p i {
-    opacity: 80%;
-    font-size: 0.8em;
-}
-
-
 section .about-middle .horizontal .two ul li h6 {
     font-weight: 400;
     font-size: 1.2em;
@@ -522,6 +521,10 @@ section .about-middle .horizontal .two ul li h6 {
 section .about-middle .horizontal .two ul li p {
     font-weight: 300;
     font-size: 0.9em;
+}
+
+section .about-middle .horizontal .four {
+    padding-right: 3.5%;
 }
 
 section .about-middle .horizontal .four ul li {
@@ -596,8 +599,8 @@ section .about-bottom div ul {
 
 section .about-bottom div li {
     flex: 0 0 auto;
-    margin: 25px;
-    width: 35%;
+    margin: 1%;
+    width: 47%;
     color: var(--font-color);
 }
 
@@ -964,3 +967,218 @@ section .contenu .delete button:hover {
     transition: 0.5s;
 }
 
+/* PROJECTS PAGE */
+
+#projects {
+    width: 95%;
+    max-width: 2000px;
+}
+
+#projects .contenu h1 {
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+
+#projects .contenu .projectsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: start;
+}
+#projects .contenu .projectsContainer .projectsFlex {
+    flex: 0 0 auto;
+    margin: 10px;
+    width: 420px;
+    height: 250px;
+}
+
+#projects .contenu .projectsContainer .projectsFlex h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: var(--font-color);
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+#projects .contenu .projectsContainer .projectsFlex img {
+    width: 50%;
+    float: left;
+    opacity: 80%;
+}
+#projects .contenu .projectsContainer .projectsFlex p {
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 20px 15px 40px 240px;
+    height: 170px;
+}
+
+#projects .contenu .projectsContainer .projectsFlex p a {
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    padding: 5px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 20%;
+    left: 15%;
+    transition: 0.5s;
+}
+
+#projects .contenu .projectsContainer .projectsFlex p a:hover {
+    background-color: var(--inverted-container-bg);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1600px){
+    section .about-top #about-name h1 {
+        font-size: 2.4em;
+    }
+    section .about-top #about-name h3 {
+        font-size: 1.2em;
+    }
+    section .about-top #about-name p {
+        font-size: 1.1em;
+        position: relative;
+        bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    section .contenu p {
+        text-align: justify;
+    }
+    section .contenu p img {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 1050px){
+    body {
+        overflow: scroll;
+    }
+    section .about-middle {
+        width: 100%;
+        height: auto;
+        margin-top: 2vh;
+        text-align: center;
+        transform: none;
+        position: absolute;
+        top: 30vh;
+    }
+    section #scroll-down {
+        display: none;
+    }
+    section #scroll-up {
+        display: none;
+    }
+    section .about-middle .horizontal {
+        flex-wrap: wrap;
+        width: 100vw;
+        transform: none;
+        transform-origin: unset;
+    }
+    section .about-middle .horizontal .slide {
+        width: 50vw;
+        padding: 30px;
+        height: 300px;
+        font-size: 1em;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    section .about-middle .horizontal .slide h3 {
+        font-size: 1.6em;
+    }
+    section .about-middle .horizontal .one {
+        padding-left: 0;
+    }
+    section .about-middle .horizontal .one p {
+        margin: 1% 15%;
+        font-size: 0.9em;
+    }
+    section .about-middle .horizontal .two li, section .about-middle .horizontal .four li {
+        margin: 10px;
+        width: 25%;
+    }
+    section .about-middle .horizontal .three ul {
+        list-style-type: none;
+        margin: 10px 5%;
+    }
+    section .about-bottom {
+        position: relative;
+        top: 650px;
+    }
+    #projects .contenu {
+        margin: 8vh auto 0 auto;
+        transform: translateY(-0%);
+    }
+    #projects .contenu h1 {
+        font-size: 3.5em;
+        margin-bottom: 40px;
+    }
+    section .contenu form img {
+        bottom: 28vh;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section #scroll-down {
+        display: none;
+    }
+    section #scroll-up {
+        display: none;
+    }
+    section .about-middle .horizontal .slide {
+        width: 100vw;
+        padding: 10px;
+    }
+    section .about-bottom {
+        top: 1250px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 0;
+        grid-template-areas:
+                "languages interest";
+    }
+    section .about-bottom #languages {
+        transform: scale(0.8);
+        left: 0;
+    }
+    section .about-bottom div ul {
+        margin: 20px 1%;
+    }
+    section .about-bottom div li {
+        flex: 0 0 auto;
+        margin: 2%;
+        width: 45%;
+        color: var(--font-color);
+    }
+    section .about-bottom #main-about-img {
+        display: none;
+    }
+    section .about-bottom #interest {
+        transform: scale(0.8);
+        right: 0;
+    }
+    section .about-top #about-tel {
+        font-size: 4em;
+        position: relative;
+        top: 20%;
+    }
+    section .about-top #about-mail {
+        font-size: 4em;
+        position: relative;
+        top: 20%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section .contenu form img {
+        bottom: 22vh;
+        width: 30%;
+    }
+}
